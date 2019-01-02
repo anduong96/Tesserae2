@@ -1,0 +1,6 @@
+{
+    "application": {
+        "publicPath": "localhost",
+        "port": 8000
+    }
+}

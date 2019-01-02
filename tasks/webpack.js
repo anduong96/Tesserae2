@@ -1,0 +1,26 @@
+/* eslint-disable import/no-extraneous-dependencies */
+const gulp = require('gulp')
+const gzip = require('gulp-gzip')
+const sourcemaps = require('gulp-sourcemaps')
+const minify = require('gulp-minify')
+const named = require('vinyl-named')
+const webpackStream = require('webpack-stream')
+const devConfig = require('../webpack/dev')
+const prodConfig = require('../webpack/prod')
+
+
+gulp.task('webpack:prod', () => gulp.src('client/index.js')
+    .pipe(named())
+    .pipe(webpackStream({ config: prodConfig }))
+    .pipe(minify())
+    .pipe(gzip())
+    .pipe(gulp.dest('dist'))
+)
+
+gulp.task('webpack:dev', () => gulp.src('client/index.js')
+    .pipe(named())
+    .pipe(webpackStream({ config: devConfig }))
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist'))
+)
