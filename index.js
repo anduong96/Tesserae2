@@ -4,8 +4,6 @@
 process.env.BABEL_DISABLE_CACHE=1
 
 if (process.env.NODE_ENV === 'production') {
-    process.env.webpackAssets = JSON.stringify(require('./dist/client/manifest.json'))
-    process.env.webpackChunkAssets = JSON.stringify(require('./dist/client/chunk-manifest.json'))
     // In production, serve the webpacked server file.
     require('./dist/server.bundle.js')
 
@@ -16,7 +14,7 @@ if (process.env.NODE_ENV === 'production') {
             [
                 'babel-plugin-webpack-loaders',
                 {
-                    config: './webpack/dev/babel.js',
+                    config: './webpack/babel.js',
                     verbose: false
                 }
             ]

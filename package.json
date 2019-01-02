@@ -13,7 +13,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development gulp dev"
+    "dev": "cross-env NODE_ENV=development gulp dev",
+    "prod": "cross-env NODE_ENV=production gulp prod",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "start": "node index.js",
+    "clean": "gulp clean"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -89,6 +93,7 @@
     "webpack-hot-middleware": "^2.21.0",
     "webpack-manifest-plugin": "^1.3.2",
     "webpack-stream": "^4.0.3",
-    "webpack2-externals-plugin": "^1.0.0"
+    "webpack2-externals-plugin": "^1.0.0",
+    "yarn": "^1.12.3"
   }
 }

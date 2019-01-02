@@ -1,7 +1,6 @@
 const cssnext = require('postcss-cssnext')
 const postcssFocus = require('postcss-focus')
 const postcssReporter = require('postcss-reporter')
-const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
     output: {
@@ -25,7 +24,6 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            localIdentName: isProd ? '[hash:base64]' : '[name]__[local]__[hash:base64:5]',
                             modules: true,
                             importLoaders: 1,
                             sourceMap: true,
