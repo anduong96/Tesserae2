@@ -19,7 +19,7 @@ app.use(reactErrorHandler)
 const servingInfo = `
 =======================================================
 ENV: ${highlight.boldUnderline(process.env.NODE_ENV)}
-APP: ${highlight.boldUnderline(`http://localhost:${port}/Tesserae2`)}
+APP: ${highlight.boldUnderline(`http://localhost:${port}`)}
 =======================================================
 `
 

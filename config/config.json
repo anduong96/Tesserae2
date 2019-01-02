@@ -1,5 +1,5 @@
 {
-    "requestURI": "/Tesserae2",
+    "requestURI": "/",
 
     "express":{
         "x-powered-by":false,

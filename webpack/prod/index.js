@@ -84,7 +84,7 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.DefinePlugin({ 'process.env': { 'NODE_ENV': JSON.stringify('production') } }),
+        new webpack.DefinePlugin({ 'process.env': { 'NODE_ENV': JSON.stringify('production'), 'SESSION_SECRET': JSON.stringify(process.env.SESSION_SECRET) } }),
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', minChunks: Infinity, filename: 'vendor.js' }),
         new ExtractTextPlugin({ filename: 'bundle.css', allChunks: true }),
         new ManifestPlugin({ basePath: '/' }),

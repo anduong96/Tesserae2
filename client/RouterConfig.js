@@ -11,8 +11,7 @@ module.exports = (
             {/* IndexRoute here will probably not being used because index route will be redirected below
             but we cant remove it because the Router is buggy */}
             <IndexRoute component={Home} />
-            <Redirect from='/tesserae2' to='/tesserae2/home' />
-            <Route exact path='/tesserae2' />
+            <Redirect from='/' to='/home' />
 
             <Route path='/*home' component={Home} />
 
