@@ -8,9 +8,9 @@ fs.readdirSync(__dirname + '/tasks').forEach((task) => require(`./tasks/${task}`
 
 gulp.task('lint', ['lint:js'])
 
-gulp.task('build:dev', ['webpack:dev'])
+gulp.task('build:dev', ['webpack:dev', 'copy'])
 
-gulp.task('build:prod', ['webpack:prod', 'webpack:prod:server'])
+gulp.task('build:prod', ['webpack:prod', 'webpack:prod:server', 'copy'])
 
 gulp.task('build', isProd ? ['build:prod'] : ['build:dev'])
 

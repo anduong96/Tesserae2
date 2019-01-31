@@ -1,4 +1,4 @@
-const webpack = require('webpack')
+const Webpack = require('webpack')
 const cssnext = require('postcss-cssnext')
 const postcssFocus = require('postcss-focus')
 const postcssReporter = require('postcss-reporter')
@@ -87,8 +87,8 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', minChunks: Infinity, filename: 'vendor.js' }),
-        new webpack.DefinePlugin({ 'process.env': { CLIENT: JSON.stringify(true), 'NODE_ENV': JSON.stringify('development') } }),
+        new Webpack.HotModuleReplacementPlugin(),
+        new Webpack.optimize.CommonsChunkPlugin({ name: 'vendor', minChunks: Infinity, filename: 'vendor.js' }),
+        new Webpack.DefinePlugin({ 'process.env': { CLIENT: JSON.stringify(true), 'NODE_ENV': JSON.stringify('development') } }),
     ]
 }

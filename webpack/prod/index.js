@@ -1,4 +1,4 @@
-const webpack = require('webpack')
+const Webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin')
@@ -84,11 +84,11 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.DefinePlugin({ 'process.env': { 'NODE_ENV': JSON.stringify('production'), 'SESSION_SECRET': JSON.stringify(process.env.SESSION_SECRET) } }),
-        new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', minChunks: Infinity, filename: 'vendor.js' }),
+        new Webpack.DefinePlugin({ 'process.env': { 'NODE_ENV': JSON.stringify('production'), 'SESSION_SECRET': JSON.stringify(process.env.SESSION_SECRET) } }),
+        new Webpack.optimize.CommonsChunkPlugin({ name: 'vendor', minChunks: Infinity, filename: 'vendor.js' }),
+        new Webpack.optimize.UglifyJsPlugin(),
         new ExtractTextPlugin({ filename: 'bundle.css', allChunks: true }),
         new ManifestPlugin({ basePath: '/' }),
         new ChunkManifestPlugin({ filename: "chunk-manifest.json", manifestconstiable: "webpackManifest" }),
-        new webpack.optimize.UglifyJsPlugin(),
     ],
 }

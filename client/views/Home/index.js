@@ -5,7 +5,16 @@ class Home extends Component {
 
     render() {
         return (
-            <div>TODO</div>
+            <div className={'builder'}>
+                <div className={'builder-header'}>
+                    <Header siteTitle={'Tesserae v4'}/>
+                </div>
+                <div className={'builder-wrapper'} >
+                    <Options />
+                    <Canvas {...props} />
+                    <Editor />
+                </div>
+            </div>
         )
     }
 }

@@ -18,6 +18,7 @@ const App = ({ title, _csrf, children, router, user }) => (
             <meta name='viewport' content='width=device-width, initial-scale=1.0' />
             <meta name='csrf-token' content={_csrf} />
             <title>{title}</title>
+            <link rel='icon' type='image/png' href='logo.png' />
             { !isDev && <link rel='stylesheet' href='bundle.css.gz' /> }
         </head>
         <body>
