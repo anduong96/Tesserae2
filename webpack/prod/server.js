@@ -33,7 +33,7 @@ module.exports = {
                 options: {
                     presets: [
                         'react',
-                        'es2015',
+                        'es2017',
                         'stage-0',
                     ],
                     plugins: [

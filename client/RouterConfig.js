@@ -5,7 +5,7 @@ import App from './App'
 import NotFound from './views/404'
 import Home from './views/Home'
 
-module.exports = (
+export default (
     <Router history={browserHistory} >
         <Route path='/' component={App} >
             {/* IndexRoute here will probably not being used because index route will be redirected below

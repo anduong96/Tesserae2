@@ -1,5 +1,5 @@
 import OptionsHandler from './handler'
-import ACTIONS from '../types'
+import ACTIONS from './types'
 
 const initialState = {
     userSelect: null,

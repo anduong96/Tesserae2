@@ -1,4 +1,4 @@
-import { ImageMJML } from './image'
+import { ImageMJML } from './Image'
 
 export const parseCanvasIntoMJML = (contents) => contents.map(
     (item) => ({

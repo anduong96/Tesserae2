@@ -12,9 +12,9 @@ const Home = (props) => (
             <Header siteTitle={'Tesserae v2'}/>
         </div>
         <div className={'builder-wrapper'} >
-            <Options />
-            <Canvas {...props} />
-            <Editor />
+            {/* <Options /> */}
+            {/* <Canvas {...props} /> */}
+            {/* <Editor /> */}
         </div>
     </div>
 )

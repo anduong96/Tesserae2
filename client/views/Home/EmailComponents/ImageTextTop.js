@@ -3,7 +3,7 @@
 */
 
 import React from 'react'
-import imageSVG from './SVG/image.svg'
+import imageSVG from './SVG/img.svg'
 import textSVG from './SVG/text.svg'
 
 export const ImageTextTopIcon = () => (

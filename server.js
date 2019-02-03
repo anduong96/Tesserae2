@@ -14,7 +14,7 @@ devMiddleware(app)
 handleGzip(app)
 
 app.use(kraken({ onConfig }))
-app.use(reactErrorHandler)
+app.use(reactErrorHandler())
 
 const servingInfo = `
 =======================================================

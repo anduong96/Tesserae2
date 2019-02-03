@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import imageSVG from './SVG/image.svg'
+import imageSVG from './SVG/img.svg'
 import { mjmlTemplate, MJML } from '../../../engine/mjml/basics'
 import { objectDasherization, loadImgAsBase64 } from '../../../utilities/common'
 
