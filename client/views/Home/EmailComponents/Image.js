@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import imageSVG from '../../../img/icons/image.svg'
-import { mjmlTemplate, MJML } from '../../../mjmlEngine/mjmlBasics'
-import { objectDasherization, loadImgAsBase64 } from '../../utils'
+import imageSVG from './SVG/image.svg'
+import { mjmlTemplate, MJML } from '../../../engine/mjml/basics'
+import { objectDasherization, loadImgAsBase64 } from '../../../utilities/common'
 
 export const ImageIcon = () => (
     <div className={'email-component image'}>
@@ -9,7 +9,7 @@ export const ImageIcon = () => (
     </div>
 )
 
-export const Image = ({ onSetCurrentHover,config, id }) => (
+export const Image = ({ onSetCurrentHover, config, id }) => (
     <div
         className={'canvas-component image'}
         onClick={() => console.log({ id })}

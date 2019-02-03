@@ -1,5 +1,5 @@
 import React from 'react'
-import titleSVG from '../../../img/icons/title.svg'
+import titleSVG from './SVG/title.svg'
 
 export const TitleIcon = () => (
     <div className={'email-component title'}>

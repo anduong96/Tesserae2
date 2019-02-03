@@ -1,5 +1,5 @@
 import React from 'react'
-import dividerSVG from '../../../img/icons/divider.svg'
+import dividerSVG from './SVG/divider.svg'
 
 export const DividerIcon = () => (
     <div className={'email-component divider'} >

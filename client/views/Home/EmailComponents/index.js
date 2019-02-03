@@ -12,6 +12,7 @@ import { Location, LocationIcon } from './Location'
 import { Click, ClickIcon } from './Click'
 import { Blank, BlankIcon } from './Blank'
 
+import './Icons.scss'
 
 const CanvasComponentShort = (configs) => (
     <div className="draggable-item" >

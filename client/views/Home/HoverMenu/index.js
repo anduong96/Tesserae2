@@ -22,7 +22,7 @@ const cloneButtonSettings = {
     ...generalButtonSettings
 }
 
-export default = ({ onRemove, onClone, onSetCurrentHover, id }) => (
+export default ({ onRemove, onClone, onSetCurrentHover, id }) => (
     <div className={'hovering-menu'}>
         <Button {...closeButtonSettings} onClick={() => onSetCurrentHover(false, id)} >
             <Icon type={'close'} />

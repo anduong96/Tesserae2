@@ -1,0 +1,255 @@
+.nav-container {
+    width: inherit;
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+    padding-right: 10px;
+}
+
+.logo img {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.steps-container {
+    display: block
+}
+
+.nav-button-group {
+    text-align: right;
+    right: 10px;
+}
+
+.nav-button-group button {
+    margin-right: 5px;
+}
+
+.image-padding-settings {
+    width: 100%;
+    display: inline-flex;
+    padding: 10
+}
+
+.common-settings {
+    padding-left: 10px;
+}
+
+.background-settings,
+.padding-settings,
+.size-settings {
+    padding-bottom: 10px;
+}
+
+.editor-footer-btn-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.editor-footer-clone-btn:hover,
+.editor-footer-clone-btn:active,
+.editor-footer-clone-btn:focus {
+    color: #18f018;
+    border-color: #18f018;
+}
+
+.editor-footer-remove-btn:hover,
+.editor-footer-remove-btn:active,
+.editor-footer-remove-btn:focus {
+    border-color: red;
+    color: red
+}
+
+.canvas-select {
+    padding: 0px 5px;
+}
+
+.canvas-select-asset-container {
+    height: 78vh;
+    overflow-y: scroll;
+}
+
+.canvas-select-card {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.canvas-select-card {
+    padding: 5px;
+}
+
+.canvas-select-card:hover {
+    border-color: #1890ff;
+}
+
+.canvas-select-card.active {
+    border-color: rgb(67, 233, 67);
+}
+
+.canvas-select-add-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.canvas-select-card-img {
+    width: 200px;
+}
+
+.ant-card-body {
+    padding: 10px 5px;
+}
+
+.ant-card-meta-title {
+    word-wrap: break-word;
+}
+
+.clicks-item {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    text-decoration: none !important;
+    color: white;
+}
+
+.canvas-is-hungry {
+    min-height: 50vh !important;
+    background-color: white !important;
+}
+
+.clicks-item:hover,
+.clicks-item:focus,
+.clicks-item:active {
+    text-decoration: none !important;
+    color: white
+}
+
+.canvas-component:hover {
+    cursor: pointer;
+    border-color: skyblue;
+    border-width: 1px;
+    border-style: dashed;
+    max-width: 590px;
+    min-width: 590px;
+}
+
+.canvas-component .location {
+    height: 100px;
+    width: 100%
+}
+
+.canvas-component-divider {
+    height: 100%;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+.hovering-menu {
+    float: right;
+    z-index: 999999;
+    position: absolute;
+    right: -40px;
+    width: 30px;
+}
+
+.close-button:hover,
+.close-button:active,
+.close-button:focus {
+    color: red;
+    border-color: red;
+}
+
+.remove-button:hover,
+.remove-button:active,
+.remove-button:focus {
+    color: rgb(255, 186, 13);
+    border-color: rgb(255, 186, 13);
+}
+
+.clone-button:hover,
+.clone-button:active,
+.clone-button:focus {
+    color: #18f018;
+    border-color: #18f018;
+}
+
+.options-wrapper {
+    width: 150px;
+    height: 100%;
+    background-color: white;
+}
+
+.editor-wrapper {
+    min-width: 20vw;
+    max-width: 20vw;
+}
+
+.canvas-wrapper {
+    padding-top: 20px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.icon-container {
+    text-align: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.canvas-wrapper .smooth-dnd-container {
+    background-color: transparent;
+    width: 590px;
+    max-width: 590px;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 7vh;
+}
+
+.view-radio-button {
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.email-component:hover {
+    cursor: grab;
+}
+
+.email-component:focus,
+.email-component:active,
+.is-dragging {
+    cursor: grabbing !important;
+}
+
+.smooth-dnd-ghost {
+    opacity: 0.8;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+

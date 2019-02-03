@@ -3,8 +3,8 @@
 */
 
 import React from 'react'
-import imageSVG from '../../../img/icons/image.svg'
-import textSVG from '../../../img/icons/text.svg'
+import imageSVG from './SVG/image.svg'
+import textSVG from './SVG/text.svg'
 
 export const ImageTextTopIcon = () => (
     <div className={'image-text-top'}>

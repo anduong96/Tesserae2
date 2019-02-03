@@ -1,22 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Header from './Header'
+import Options from './Options'
+import Canvas from './Canvas'
+import Editor from './Editor'
 
-class Home extends Component {
-    state = {  }
+import './Home.scss'
 
-    render() {
-        return (
-            <div className={'builder'}>
-                <div className={'builder-header'}>
-                    <Header siteTitle={'Tesserae v4'}/>
-                </div>
-                <div className={'builder-wrapper'} >
-                    <Options />
-                    <Canvas {...props} />
-                    <Editor />
-                </div>
-            </div>
-        )
-    }
-}
+const Home = (props) => (
+    <div className={'builder'}>
+        <div className={'builder-header'}>
+            <Header siteTitle={'Tesserae v2'}/>
+        </div>
+        <div className={'builder-wrapper'} >
+            <Options />
+            <Canvas {...props} />
+            <Editor />
+        </div>
+    </div>
+)
 
 export default Home

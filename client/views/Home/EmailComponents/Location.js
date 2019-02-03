@@ -1,5 +1,5 @@
 import React from 'react'
-import locationSVG from '../../../img/icons/location.svg'
+import locationSVG from './SVG/location.svg'
 
 export const LocationIcon = () => (
     <div className={'email-component location'}>

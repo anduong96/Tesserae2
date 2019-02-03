@@ -4,7 +4,7 @@ import { hot } from 'react-hot-loader'
 // import Layout from './layout'
 // import configureStore from './store/init'
 
-// import './App.scss'
+import './App.scss'
 
 // const store = configureStore()
 const isDev = process.env.NODE_ENV === 'development'

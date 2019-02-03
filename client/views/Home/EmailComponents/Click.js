@@ -1,5 +1,5 @@
 import React from 'react'
-import clickSVG from '../../../img/icons/click.svg'
+import clickSVG from './SVG/click.svg'
 
 export const Click = ({ onSetCurrentHover, config, id }) => (
     <div className={'canvas-component clicks'}

@@ -1,5 +1,5 @@
 import React from 'react'
-import textSVG from '../../../img/icons/text.svg'
+import textSVG from './SVG/text.svg'
 
 export const TextIcon = () => (
     <div className={'email-component text'}>
